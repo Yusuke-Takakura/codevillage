@@ -1,0 +1,51 @@
+article {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        flex-direction: column;
+    }
+    .menu__course {
+        width: 26%;
+        margin-top: 11px;
+        text-align: center;
+        @include sp {
+            width: 100%;
+            margin-top: 50px;
+        }
+        &__img {
+            width: 100%;
+            & img {
+                width: 100%;
+            }
+        }
+        &__navi {
+            @include sp {
+                margin-left: 1.3rem;
+                margin-right: 2.4rem; 
+            }
+        }
+        & h2 {
+            font-size: 3rem;
+            margin-top: 37px;
+            @include sp {
+                text-align: left;
+            }
+        }
+        & p {
+            font-size: 1.6rem;
+            margin: 37px 0.5rem;
+            text-align: left;
+            @include sp {
+                margin: 0;
+                margin-top: 30px;
+            }
+        }
+        & h3 {
+            font-size: 1.6rem;
+            text-align: right;
+            @include sp {
+                margin-top: 26px;
+            }
+        }
+    }
+}
